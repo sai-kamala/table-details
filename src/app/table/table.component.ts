@@ -9,15 +9,19 @@ import {AdventureTimeService} from '../adventure-time.service';
 })
 export class TableComponent implements OnInit {
 tableDataRes:any;
-  constructor(private service:AdventureTimeService) { }
-
-  ngOnInit() {
+private newAttribute: any = {name:"SDASDSAD", age:24};
+constructor(private service:AdventureTimeService) { }
+ngOnInit() {
     this.service.getJSON().subscribe(
-      data => {
-        this.tableDataRes = data;
-        console.log(data);
-    })
-
+      data => 
+        this.tableDataRes = data
+        )
     }
-
+    deleteRow(index:number){
+    this.tableDataRes.splice(index, 1);
+    }
+   addRow(){
+     this.tableDataRes.push(this.newAttribute)
+    //  this.newAttribute = {};
+   }
 }

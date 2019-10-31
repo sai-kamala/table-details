@@ -1,11 +1,13 @@
-<table>
+<table class="table-data">
   <tr>
     <th>Name</th>
     <th>Age</th>
   </tr>
-  <tr>
-    <td>kamala</td>
-    <td>24</td>
+  <tr *ngFor = "let data of tableDataRes; let i = index;" >
+    <td>{{data.name}}</td>
+    <td>{{data.age}}</td>
+    <td><button type="button" id="deleteRowBtn" (click)="deleteRow(i)">delete</button></td>
+    <td><button type="button" (click)="addRow()">add</button></td>
   </tr>
 </table>
 

@@ -1,5 +1,4 @@
- {
-	"result" : [
+ [
 	  {
 		"name": "Earl of Lemongrab",
 		"age": "Unknown",
@@ -25,4 +24,4 @@
 		"occupation": "Babysitter"
 	  }
 	]
- }
+ 

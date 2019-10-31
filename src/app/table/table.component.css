@@ -1,0 +1,15 @@
+.table-data{
+    border: 2px solid black;
+}
+.table-data tr td{
+    border-bottom: 2px solid black;
+}
+.table-data tr td{
+    border-right: 2px solid black;
+}
+.table-data tr:last-child td{
+    border-bottom: none;
+}
+.table-data tr:nth-child(2) td{
+    border-top: 2px solid black;
+}
