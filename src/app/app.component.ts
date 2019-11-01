@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'table-details';
   constructor() {
-        // var obj;
-        // this.getJSON().subscribe(data => obj=data, error => console.log(error));
+       
     }
 }
  

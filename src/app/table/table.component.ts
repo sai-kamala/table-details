@@ -22,6 +22,6 @@ ngOnInit() {
     }
    addRow(){
      this.tableDataRes.push(this.newAttribute)
-    //  this.newAttribute = {};
+     this.newAttribute = {};
    }
 }

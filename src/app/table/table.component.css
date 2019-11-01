@@ -13,3 +13,6 @@
 .table-data tr:nth-child(2) td{
     border-top: 2px solid black;
 }
+.addRow{
+    text-align: center;
+}
